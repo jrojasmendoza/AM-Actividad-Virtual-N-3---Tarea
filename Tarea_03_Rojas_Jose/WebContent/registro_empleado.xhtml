@@ -15,7 +15,7 @@
 			
 			<h:outputText value="Fecha de Ingreso"></h:outputText>
 			<h:inputText value="#{empleadoManagedBean.empleado.fechaIngreso}">
-				<f:convertDateTime pattern="dd/MM/yyyy"></f:convertDateTime>
+				<f:convertDateTime pattern="dd-MM-yyyy"></f:convertDateTime>
 			</h:inputText>
 			
 			<h:outputText value="Salario"></h:outputText>
@@ -58,7 +58,7 @@
 		<h:column>
 			<f:facet name="header">Fecha de Ingreso</f:facet>
 			<h:outputText value="#{e.fechaIngreso}">
-				<f:convertDateTime pattern="yyyy.MM.dd"></f:convertDateTime>
+				<f:convertDateTime pattern="dd/MM/yyyy"></f:convertDateTime>
 			</h:outputText>
 		</h:column>
 		<h:column>
